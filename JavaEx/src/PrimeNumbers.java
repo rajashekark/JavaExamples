@@ -11,7 +11,6 @@ public class PrimeNumbers {
 		int num = s.nextInt();
 		for(int i=2; i<=num/2; i++)
 			{
-			//System.out.println(i + " " + num);
 				if(num%i == 0)
 				{
 					flag = true;
