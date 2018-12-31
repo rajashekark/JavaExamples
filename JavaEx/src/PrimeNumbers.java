@@ -1,18 +1,29 @@
+import java.util.Scanner;
 
 public class PrimeNumbers {
 
 	public static void main(String args[])
 	{
-		int num = 4;
-		if(num!=2 && num%2==0)
-	    {
-			System.out.println("Not a PrimeNumber");
-		}
-		else 
-		{
-			
+		//int num = 9;
+		boolean flag = false;
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter a number to check for PrimeNumber:");
+		int num = s.nextInt();
+		for(int i=2; i<=num/2; i++)
+			{
+			//System.out.println(i + " " + num);
+				if(num%i == 0)
+				{
+					flag = true;
+					break;
+				}
+			}
+		if(!flag)
+			System.out.println(num +":is a Prime number");
+		else
+			System.out.println(num + ": not a prime number");
 		}
 		
 	}
 
-}
+
