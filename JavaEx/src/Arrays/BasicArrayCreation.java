@@ -10,6 +10,17 @@ public class BasicArrayCreation {
 		float array2[] = new float[3]; // declaring and instantiating/assigning memory
 
 		double array3[] = new double[2];
+		
+		int array4[] = new int[]{1,2,3,4,5};//declaring instantiating and initializing
+		
+		System.out.println("array 5");
+		int array5[] = {1,2,3};//declaring and initializing
+		for(int b: array5)
+			System.out.print(b + " ");
+		System.out.println();
+		for(int a: array4)
+			System.out.print(a + " ");
+		System.out.println();
 
 		// array[0] = 1;//initialization
 		array[1] = 2;
